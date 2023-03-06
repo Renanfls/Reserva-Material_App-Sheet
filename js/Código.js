@@ -11,5 +11,4 @@ function myFunction(nome, photo, address, useremail, registro, id) {
   registroAnteriores.getRange(2, 5).setValue(address)
   registroAnteriores.getRange(2, 6).setValue(useremail)
   registroAnteriores.getRange(2, 7).setValue(registro)
-  registroAnteriores.getRange(2, 8).setValue(teste)
 }
