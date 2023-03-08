@@ -4,6 +4,7 @@ function myFunction(nome, photo, address, useremail, registro, id) {
   // Refere a aba
   var registroAnteriores = ss.getSheetByName("registroAnteriores");
 
+  // Adiciona na ultima linha da BaseDeDados
   var ultimaLinha = registroAnteriores.getLastRow() + 1;
 
   // getRange(2, 1) isso quer dizer célula A2
