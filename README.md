@@ -115,7 +115,7 @@ Ex: adicionar uma nova coluna na tabela
 var ss = SpreadsheetApp.openByUrl("")
 ```
 
-- O nome da variável `ss` é definido como melhores práticas
+- O nome da variável `ss`(SpreadSheet) é definido como melhores práticas
 - `SpreadsheetApp` - identifica o app da Google que estamos utilizando
 - `.openByUrl("")` - onde passamos a URL da planilha desejada
 
@@ -123,3 +123,21 @@ var ss = SpreadsheetApp.openByUrl("")
 // Refere a aba
 var nomeDaAba = ss.getSheetByName("nomeDaAba")
 ```
+- `.getSheetByName("")` - Identifica a aba pelo nome. Colocamos o mesmo nome definido na aba da planilha
+#
+**Passando argumentos para function**
+```
+function myFunction(nome) {
+    var ss = SpreadsheetApp.openByUrl("URL da planilha desejada");
+
+    var nomeDaAba = ss.getSheetByName("nomeDaAba");
+
+    var lr = nomeDaAba.getLastRow()+1
+
+    nomeDaAba.getRange(lr, 1).setValue(nome)
+}
+```
+- `myFunction(nome)` - `nome` é o argumento que estamos passando
+- `.getLastRow()+1` - Identifica a ultima linha preenchida e acrescenta a resposta na linha de baixo
+-  `.getRange(linha, coluna)` - Identifica a linha e coluna 
+- `.setValue()` - Adiciona valor 

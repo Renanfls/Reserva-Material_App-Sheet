@@ -1,5 +1,10 @@
 // Variavel global, pois está fora do scopo do myFunction
-var ss = SpreadsheetApp.openByUrl("https://docs.google.com/spreadsheets/d/10fvA1TY9OU3ZRmsIwrUdTukUb0LS5jUMAXxfQEEShz8/edit?pli=1#gid=1184446824")
+
+// Planilha Audiovisual
+// var ss = SpreadsheetApp.openByUrl("https://docs.google.com/spreadsheets/d/10fvA1TY9OU3ZRmsIwrUdTukUb0LS5jUMAXxfQEEShz8/edit?pli=1#gid=1184446824")
+
+// Planilha Renan
+var ss = SpreadsheetApp.openByUrl("https://docs.google.com/spreadsheets/d/1-N03O2p88Sz-1svp0UlR4iAC9T_HOLCJ2QQ8g_hrKpk/edit#gid=255282014")
 
 function myFunction(nome, photo, address, userEmail, dateTime, id, idVisitante) {
   /* 
