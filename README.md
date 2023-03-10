@@ -110,7 +110,7 @@ Ex: adicionar uma nova coluna na tabela
 # **Apps Script(Back-End)**
 **É aonde definimos Funções e validações**
 
-```
+```javascript
 // Refere ao arquivo
 var ss = SpreadsheetApp.openByUrl("")
 ```
@@ -119,14 +119,14 @@ var ss = SpreadsheetApp.openByUrl("")
 - `SpreadsheetApp` - identifica o app da Google que estamos utilizando
 - `.openByUrl("")` - onde passamos a URL da planilha desejada
 
-```
+```javascript
 // Refere a aba
 var nomeDaAba = ss.getSheetByName("nomeDaAba")
 ```
 - `.getSheetByName("")` - Identifica a aba pelo nome. Colocamos o mesmo nome definido na aba da planilha
 #
 **Passando argumentos para function**
-```
+```javascript
 function myFunction(nome) {
     var ss = SpreadsheetApp.openByUrl("URL da planilha desejada");
 
@@ -140,4 +140,4 @@ function myFunction(nome) {
 - `myFunction(nome)` - `nome` é o argumento que estamos passando
 - `.getLastRow()+1` - Identifica a ultima linha preenchida e acrescenta a resposta na linha de baixo
 -  `.getRange(linha, coluna)` - Identifica a linha e coluna 
-- `.setValue()` - Adiciona valor 
+- `.setValue()` - Adiciona valor
